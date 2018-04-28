@@ -7,9 +7,9 @@
 
 #### Add a new API
 
-* Create a new folder in `./src`, for example: `./src/apiName1`
-* Copy an `index.js` file like: `./src/apiName1/index.js`
-* Create another folder, `tests` in your API folder, example: `./src/apiName1/tests`
+* Create a new folder in `./src`, for example: `./src/apiName3`
+* Copy an `index.js` file like: `./src/apiName3/index.js`
+* Create another folder, `tests` in your API folder, example: `./src/apiName3/tests`
 * Check the next steps for adding tests
 
 #### Add a new tested route
@@ -36,6 +36,8 @@
   > The time that matters, on which we can act is `http_req_waiting` time because it represents the server processing your request. Hence the performance of the code, and not the network.
 
 * Depending on the result:
-  * **If the performance is above 500ms:** Andon your architect and/or PO. Depending on the gravity, either find time to investigate asap, or create a performance issue ticket in order to fix it next time.
+  * **If the performance is above the standard time you fixed (we chose 500ms):** Andon your architect and/or PO. Depending on the gravity, either find time to investigate asap, or create a performance issue ticket in order to fix it next time.
   * **If the performance is acceptable:** Write in your new test file the found average performance
 * Don't forget to version the changes in your performance monitoring repo
+
+> 👉 **Next steps:** Follow [Run K6 on an API](./run-k6.md)
